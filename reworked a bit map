@@ -1,0 +1,52 @@
+class map1:
+ def village():
+  while True:
+    print('\n\n\n\n\n')
+    print('-'*30)
+    print("You're in the village")
+    print("[1]Home, [2]Shop, [3]Blacksmith, [4]Grassland")
+    print('-'*30)
+    choice = input()
+    if choice == "1":
+        map1.home()
+    elif choice == "2":
+        map1.shop()
+    elif choice == "3":
+        map1.blacksmith()
+    elif choice == "4":
+        map1.grassland()
+
+ def home():
+  while True:
+    print('\n\n\n\n\n')
+    print('-'*30)
+    print("You're in your house")
+    print("[1]Bed, [2]Chest, [3]Back")
+    print('-'*30)
+    choice = input()
+    if choice == "1":
+        print('-'*30)
+        print("Do you want to go sleep?")
+        print("[1]Yes, [2]No")
+        print('-'*30)
+        choicebed = input()
+        if choicebed == "1":
+           print("You decided to go bed")
+           map1.home()
+        elif choicebed == "2":
+           print("You take a good look at bed")
+           map1.home()
+
+    elif choice == "2":
+        print("You open the chest and found a wooden sword and shield that have been passed for generations")
+        print("Do you want to take it?")
+        print("[1]Yes, [2]No")
+        choice == input()
+        if choice == "1":
+           print("You get the wooden sword and shield then start your journey")
+           map1.home()
+        elif choice == "2":
+           print("You left the wooden sword and shield into dust")
+           map1.home()
+    elif choice == "3":
+        map1.village()
